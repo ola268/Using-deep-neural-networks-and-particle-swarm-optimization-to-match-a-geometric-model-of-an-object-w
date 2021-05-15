@@ -133,11 +133,10 @@ int main()
 
 
 	//ładowanie zdjęć
-	Mat  maskfromyolact, org, maskY;
+	Mat  maskfromyolact, org;
 
-	maskY = imread("40_13.m.png", 0);
-	maskfromyolact = imread("14.3.m.png", 0);
-	org = imread("14.3.w.png");
+	maskfromyolact = imread("fabia_m35.png", 0);
+	org = imread("fabia_w35.png");
 
 	
 	Mat img8 = maskfromyolact;
@@ -178,7 +177,7 @@ int main()
 
 													//lx , ly,  lz,   x,    y,   b,   wf,     r,    wb,   wr,   hf,   hb, angle
 		pso_settings_t* settings = pso_settings_new({ 3.7, 1.5, 1.3,  -15,  -10, 0.2,  0.15,  0.30,  0.08, 0.70, 0.5, 0.6,  0 },
-			                                        { 5,   2,   1.55,  20,   25, 0.25,  0.20,  0.5,  0.15, 0.90, 0.6,  0.7, 180 },
+			                                        { 5,   2,   1.55,  20,   25, 0.3,  0.20,  0.5,  0.15, 0.90, 0.6,  0.7, 360 },
 			                                         0, 500, 500, 10, 20);
 		
 		
